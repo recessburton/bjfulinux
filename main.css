@@ -1,0 +1,53 @@
+body {
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    font-size: 1em;
+    border: 1px solid #fff;
+    display: block;
+    margin: 0 auto;
+    padding: 5em 3em;
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    z-index:9999;
+}
+
+#wrapper h1,
+#wrapper p {
+    line-height: 1;
+    margin: 0;
+}
+
+#wrapper h1 {
+    font-size: 3em;
+}
+
+
+.container-fluid p {
+    margin-top: 1.5em;
+}
+
+@media screen and (max-width: 625px) {
+    #wrapper {
+        width: -moz-calc(80% - 3em);
+        width: -ms-calc(80% - 3em);
+        width: -o-calc(80% - 3em);
+        width: -webkit-calc(80% - 3em);
+        width: calc(80% - 3em);
+    }
+
+    #wrapper h1 {
+        font-size: 2.5em;
+    }
+
+     .bgfont{
+        font-size: 0.5em;
+    }
+}
+
+

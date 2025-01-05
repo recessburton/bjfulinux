@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <title>北京林业大学Linux用户组</title>
+    <base href="http://www.bjfulinux.com/" />
+    <meta name="author" content="YTC" />
+    <meta name="copyright" content="2014-2024 BJFULINUX.COM" />
+    <meta name="description" content="北京林业大学Linux用户组"/>
+    <meta name="baidu-site-verification" content="mhZ1Eodom2" />
+    <meta name="application-name" content="北京林业大学Linux用户组" />
+
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script src="jquery.min.js"/>
+
+
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="main.css"/>
+
+    <style type="text/css">
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
+        body{
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        .smfont{
+            font-size: 1em;
+            color:white;
+        }
+        .smfont p{
+            display:inline;
+        }
+
+    </style>
+
+    <script src="rainyday.js"></script>
+    <script>
+        function run() {
+            var image = document.getElementById('background');
+            image.onload = function() {
+                var engine = new RainyDay({
+                    image: this
+                });
+                engine.rain([ [1, 2, 8000] ]);
+                engine.rain([ [3, 3, 0.88], [5, 5, 0.9], [6, 2, 1] ], 100);
+            };
+            image.crossOrigin = 'anonymous';
+            image.src="bjfubackground.jpg";
+        }
+    </script>
+
+</head>
+<body  onload='run();'>
+<div>
+    <div id="wrapper">
+        <h1>北京林业大学</h1>
+	<h2>Linux用户组</h2>
+        <p class='bgfont'>Linux User Group @ BJFU</p>
+	<!--<h3><a href=forum.php style='color:BlueViolet'>Welcome</a></h3>-->
+	<h3><a href='https://845087845.wixsite.com/bjfulinux' style='color:BlueViolet'>Welcome</a></h3>
+        <hr/>
+        <div class="smfont">
+        <a href='http://ens.bjfu.edu.cn/xzcy/173564.html'>
+            <img width='50px' height='30px' src='http://ens.bjfu.edu.cn/images/logo.png'>
+            <p class='smfont'>Embedded Networked System Lab @ BJFU</p>
+            </img>
+        </a>
+        </div>
+        <div  class="smfont">
+        <p class='smfont'>Copyright&copy;2014-2024 Y.T.C. |
+            <a style='color:white' href='https://beian.miit.gov.cn'>京ICP备14050379号-1</a>
+        </p>
+	<script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1253358447'%3E%3C/span%3E%3Cscript src='https://s22.cnzz.com/z_stat.php%3Fid%3D1253358447%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+        </div>
+
+    </div>
+    <img id="background" alt="" src="bjfubackground.jpg"/>
+    <script src="main.js"></script>
+</div>
+</body>
+</html>
+

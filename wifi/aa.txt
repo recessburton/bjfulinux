@@ -1,0 +1,10 @@
+ATE TABLE platform;
+INSERT INTO platform (ID,NAME,LOGIN_URL,SERVICE_URL,GET_TOKEN_URI,CREATE_USER_URI,SUPER_USER_NAME,super_user_password,platform_uid,button_key,TOKEN_REQUEST_TYPE,DELETED,TENANT_ID,ROLE_ID)
+VALUES 
+(1,"贵州PaaS管理平台",'http://135.10.117.17:31810/bdoc/dist/index.html','',"","",'','',"1","paas_operation",'',FALSE,"",""),
+(2,"贵州IaaS运营平台（自服务）","http://135.10.66.241:30101/#/login","http://135.10.66.241:31013/v1","/user/token","/bigData-users","suyanEPC-yunying","Suyanepc@yunying","2","iaas_organization","POST",FALSE,"cd88ce2db1cf41f9bcaf311271e98554","c660461b812111e991a6384c4fcc700e"),
+(3,"贵州IaaS运营平台（运营管理）","http://135.10.66.241:30101/#/login","http://135.10.66.241:31013/v1","/user/token","/bigData-users","suyanEPC-yunying","Suyanepc@yunying","3","iaas_operation","POST",FALSE,"01e17ed825804b67a3c632dfe8f000e7","491af529837b11e991a6384c4fcc700e"),
+(4,"贵州IaaS运维平台（代开通）","http://135.10.66.241:30101/#/login","http://135.10.66.241:31013/v1","/user/token","/bigData-users","suyanEPC-yunying","Suyanepc@yunying","4","iaas_proxy_open","POST",FALSE,"8d75da27a8014e269faf4d698fbc4752","3a1a60f2837b11e991a6384c4fcc700e"),
+(5,"贵州IaaS运维平台（运维管理）","http://135.10.66.244:30106/#/login","http://135.10.66.244:31013/v1","/user/token","/bigData-users","maxc","1qaz!QAZ","4","iaas_maintain","POST",FALSE,"8d75da27a8014e269faf4d698fbc4752","3a1a60f2837b11e991a6384c4fcc700e"),
+(6,"统一视图",'http://135.10.66.249:30080/#/login','http://135.10.66.249:30156/v1',"/user/oauth/token","/bigData-users","epic","epic1234","5","unified_view","GET",FALSE,"","");
+
