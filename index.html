@@ -14,87 +14,38 @@
     <meta name="baidu-site-verification" content="mhZ1Eodom2" />
     <meta name="application-name" content="北京林业大学Linux用户组" />
 
-
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <script src="/jquery.min.js"></script>
-
-
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="/main.css"/>
-
-    <style type="text/css">
-        a:link {
-            text-decoration: none;
-        }
-        a:visited {
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: none;
-        }
-        a:active {
-            text-decoration: none;
-        }
-        body{
-            overflow-x: hidden;
-        }
-        .smfont{
-            font-size: 1em;
-            color:white;
-        }
-        .smfont p{
-            display:inline;
-        }
-
-    </style>
-
-    <script src="/rainyday.js"></script>
-    <script>
-        function run() {
-            var image = document.getElementById('background');
-            image.onload = function() {
-                var engine = new RainyDay({
-                    image: this
-                });
-                engine.rain([ [1, 2, 8000] ]);
-                engine.rain([ [3, 3, 0.88], [5, 5, 0.9], [6, 2, 1] ], 100);
-            };
-            image.crossOrigin = 'anonymous';
-            image.src = "/bjfubackground.jpg";
-        }
-    </script>
-
+    <script src="/rainyday.js" defer></script>
 </head>
-<body  onload='run();'>
-<div>
-    <div id="wrapper">
+<body>
+<main class="hero" aria-label="北京林业大学Linux用户组">
+    <img class="hero-background" src="/bjfubackground.jpg" alt=""/>
+    <div class="hero-shade"></div>
+
+    <section class="hero-card">
+        <p class="eyebrow">Linux User Group @ BJFU</p>
         <h1>北京林业大学</h1>
-	<h2>Linux用户组</h2>
-        <p class='bgfont'>Linux User Group @ BJFU</p>
-	<!--<h3><a href=forum.php style='color:BlueViolet'>Welcome</a></h3>-->
-	<h3><a href='https://845087845.wixsite.com/bjfulinux' style='color:BlueViolet'>Welcome</a></h3>
-        <hr/>
-        <div class="smfont">
-        <a href='https://ens.bjfu.edu.cn/xzcy/173564.html'>
-            <img width='50px' height='30px' src='https://ens.bjfu.edu.cn/images/logo.png'>
-            <p class='smfont'>Embedded Networked System Lab @ BJFU</p>
-            </img>
-        </a>
-        </div>
-        <div  class="smfont">
-        <p class='smfont'>Copyright&copy;2014-2025 Y.T.C. |
-            <a style='color:white' href='https://beian.miit.gov.cn'>京ICP备14050379号-1</a>
-        </p>
-	<script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1253358447'%3E%3C/span%3E%3Cscript src='https://s22.cnzz.com/z_stat.php%3Fid%3D1253358447%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+        <h2>Linux用户组</h2>
+
+        <div class="hero-actions">
+            <a class="welcome-link" href="https://845087845.wixsite.com/bjfulinux">Welcome</a>
         </div>
 
-    </div>
-    <img id="background" alt="" src="/bjfubackground.jpg"/>
-    <script src="/main.js"></script>
-</div>
+        <div class="lab-link">
+            <a href="https://ens.bjfu.edu.cn/xzcy/173564.html">
+                <img width="50" height="30" src="https://ens.bjfu.edu.cn/images/logo.png" alt="ENS Lab"/>
+                <span>Embedded Networked System Lab @ BJFU</span>
+            </a>
+        </div>
+
+        <footer class="site-footer">
+            <p>Copyright&copy;2014-2026 Y.T.C. |
+                <a href="https://beian.miit.gov.cn">京ICP备14050379号-1</a>
+            </p>
+            <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1253358447'%3E%3C/span%3E%3Cscript src='https://s22.cnzz.com/z_stat.php%3Fid%3D1253358447%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+        </footer>
+    </section>
+</main>
+<script src="/main.js"></script>
 </body>
 </html>
