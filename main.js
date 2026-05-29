@@ -167,18 +167,3 @@
 //         });
 //     };
 // })($, window);
-
-$(document).ready(function() {
-    $(window).resize();
-});
-
-$(window).resize(function() {
-    $("#wrapper").hide();
-    $("#wrapper").css({
-        left: ($(window).width() - $("#wrapper").outerWidth()) / 2,
-        top: ($(window).height() - $("#wrapper").outerHeight()) / 2 + $(document).scrollTop(),
-    });
-    $("#wrapper").show();
-
-});
-
